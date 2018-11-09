@@ -1,10 +1,14 @@
 # Hayvan Tahmini
 
-- [Hayvan Tahmini nedir?](#hayvan tahmini nedir?)  
-- [Nasil Çalışıyor](#Nasıl Çalışıyor)  
-- [Nasıl Denerim](#Nasıl Denerim)  
-- [Güncellemeler](#Güncellemeler)  
-- [Referanslar](#Referanslar)
+<!-- TOC -->
+
+- [Hayvan Tahmini nedir?](#hayvan-tahmini-nedir?)  
+- [Nasil Çalışıyor](#nasıl-çalışıyor)  
+- [Nasıl Denerim](#nasıl-denerim)  
+- [Güncellemeler](#güncellemeler)  
+- [Referanslar](#r****eferanslar)
+
+<!-- /TOC -->
 
 ## Hayvan Tahmini nedir?
 
