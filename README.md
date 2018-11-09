@@ -46,6 +46,11 @@ Derlenmiş programı disk.d64 imajını kullanarak açabilirsiniz. Programı sad
 makefile OSX El Capitan üzerinde cc65 v2.17 ile denenmiştir. 
 
    
+## Güncellemeler
+9.11.2014   
+string.h kütüphanesi kaldırıldı.
+strcpy ve strcat fonksiyonları yerine char_cpy ve concat fonksiyonları yazıldı.
+
 ## Referanslar
 [The Animal Episode]
 (http://www.fourmilab.ch/documents/univac/animal.html)

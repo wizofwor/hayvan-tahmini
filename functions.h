@@ -23,6 +23,20 @@ bool check_for_menu_command(void);
 	/* ch değişkenini menü girişleriyle karşılaştırır.
 	eşleşme durumunda menu_command bayrağını set eder */
 
+// --- Temel Fonksiyonlar ---------------------------------
+
+void char_cpy(char * destination, char * source);
+	/* char array copy
+
+	null terminating diziler için src'yi dest'e kopyalar. */
+
+void concat(char * destination, char * source);
+	/* char array concatanete
+
+	null terminating diziler için src'yi dest'in sonuna ekler.
+	Boyut kontrolü yapmaz. */
+	
+
 // --- Veri Manipulasyonu ---------------------------------
 
 void add_node(uchar *data, uchar *animal, bool is_left);

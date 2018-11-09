@@ -1,3 +1,25 @@
 # Sublime project and workspace files
+######################################
+
 *.sublime-project
 *.sublime-workspace
+
+# Object Files
+######################################
+
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+######################################
+
+*.ilk
+*.map
+*.exp
+
+# Executables
+######################################
+
+*.prg

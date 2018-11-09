@@ -7,7 +7,6 @@
 
 #include <stdlib.h>
 #include <conio.h>
-#include <string.h>
 #include "functions.h"
 
 /*** Global Değişkenler ***/

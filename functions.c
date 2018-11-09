@@ -9,7 +9,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <conio.h>
-#include <string.h>
 #include "functions.h"
 
 void reset_screen(void)
@@ -223,6 +222,27 @@ void do_menu_command(void)
 			menu_command = null;
 	}
 
+// --- Temel Fonksiyonlar ---------------------------------
+
+void char_cpy(char * dest, char * src)
+	{
+		while(*src)
+			*dest++ = *src++;
+		*dest = '\0';
+	}
+
+void concat(char * dest, char * src)
+	{
+		char i;
+		while(*dest)
+			*dest++;
+		while(*src)
+			*dest++ = *src++;
+		*dest = '\0';
+	}
+
+
+
 // --- Veri Manipulasyonu ---------------------------------
 
 void add_node(uchar *data, uchar *animal, bool is_left)
@@ -234,7 +254,7 @@ void add_node(uchar *data, uchar *animal, bool is_left)
 
 		// add new animal
 		node[n].is_leaf=1;
-		strcpy(node[n].data, animal);
+		char_cpy(node[n].data, animal);
 		node[n].left=NULL;
 		node[n].right=NULL;
 		node[n].parent=current_node;
@@ -250,7 +270,7 @@ void add_node(uchar *data, uchar *animal, bool is_left)
 
 		// update current node with data
 		ptr_target->is_leaf=0;
-		strcpy(ptr_target->data, data);
+		char_cpy(ptr_target->data, data);
 		if(is_left)
 			{
 			ptr_target->left=n;
@@ -304,8 +324,8 @@ void write_tree(uchar *id)
 
 		// Dosya ismini hesapla
 		itoa((uchar)id, buffer, 10);
-		strcpy(file_name,"tdat");
-		strcat(file_name,buffer);
+		char_cpy(file_name,"tdat");
+		concat(file_name,buffer);
 		
 		cprintf("\n\rVeri dosyasi aciliyor...");
 		_filetype = 's';
@@ -346,8 +366,8 @@ void read_tree(uchar *id)
 
 		// Dosya ismini hesapla
 		itoa((uchar)id, buffer, 10);
-		strcpy(file_name,"tdat");
-		strcat(file_name,buffer);
+		char_cpy(file_name,"tdat");
+		concat(file_name,buffer);
 
 		i=0;
 		cprintf("\n\rVeri dosyasi aciliyor...");
@@ -382,19 +402,19 @@ void debug_test_input(void)
 	{
 		// Initialize tree
 		node[0].is_leaf=0;
-		strcpy(node[0].data, "Suda mi yasar?");
+		arr_cpy(node[0].data, "Suda mi yasar?");
 		node[0].left=1;
 		node[0].right=2;
 		node[0].parent=NULL;
 
 		node[1].is_leaf=1;
-		strcpy(node[1].data, "Kopek Baligi");
+		arr_cpy(node[1].data, "Kopek Baligi");
 		node[1].left=NULL;
 		node[1].right=NULL;
 		node[1].parent=0;
 
 		node[2].is_leaf=1;
-		strcpy(node[2].data, "Aslan");
+		arr_cpy(node[2].data, "Aslan");
 		node[2].left=NULL;
 		node[2].right=NULL;
 		node[2].parent=0;
