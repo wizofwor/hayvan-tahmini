@@ -1,9 +1,9 @@
 # Hayvan Tahmini
 
 - [Hayvan Tahmini nedir?](#hayvan tahmini nedir?)  
-- [Nasil Çalışıyor](##Nasıl Çalışıyor)  
-- [Nasıl Denerim](##Nasıl Denerim)  
-- [Güncellemeler](##Güncellemeler)  
+- [Nasil Çalışıyor](#Nasıl Çalışıyor)  
+- [Nasıl Denerim](#Nasıl Denerim)  
+- [Güncellemeler](#Güncellemeler)  
 - [Referanslar](#Referanslar)
 
 ## Hayvan Tahmini nedir?
@@ -64,7 +64,7 @@ Bu aşamada programın boyutu 10KB'a indi.
 ## Referanslar
 [The Animal Episode](http://www.fourmilab.ch/documents/univac/animal.html)
 
-[GUESS THE ANIMAL - A DECISION-TREE IN YOUR ATARI] (https://www.atarimagazines.com/v4n12/Animal.html)
+[GUESS THE ANIMAL - A DECISION-TREE IN YOUR ATARI](https://www.atarimagazines.com/v4n12/Animal.html)
 
 [AI Animals / perlMonks ](https://www.perlmonks.org/?node_id=195991)  
 
