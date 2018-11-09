@@ -6,7 +6,6 @@
 
 //#define DEBUG
 
-#include <stdlib.h>
 #include <stdio.h>
 #include <conio.h>
 #include "functions.h"
@@ -208,7 +207,7 @@ void do_menu_command(void)
 
 			if (ch==1)
 			{
-				exit(0);
+				//exit(0);
 			}
 			else if (ch==2)
 			{
@@ -314,18 +313,12 @@ void print_tree(void)
 
 void write_tree(uchar *id)
 	{
-		uchar *buffer;
-		uchar *file_name;
+		uchar file_name[8];
 		FILE *file;
 		uchar i;
 
-		buffer = malloc(1 * sizeof(uchar));
-		file_name = malloc(8 * sizeof(uchar));
-
-		// Dosya ismini hesapla
-		itoa((uchar)id, buffer, 10);
 		char_cpy(file_name,"tdat");
-		concat(file_name,buffer);
+		concat(file_name, id);
 		
 		cprintf("\n\rVeri dosyasi aciliyor...");
 		_filetype = 's';
@@ -356,18 +349,17 @@ void write_tree(uchar *id)
 
 void read_tree(uchar *id)
 	{
-		uchar *buffer;
-		uchar *file_name;
+		uchar file_name[8];
 		FILE *file;
 		uchar i;
 
-		buffer = malloc(1 * sizeof(uchar));
-		file_name = malloc(8 * sizeof(uchar));
+		//buffer = malloc(1 * sizeof(uchar));
+		//file_name = malloc(8 * sizeof(uchar));
 
 		// Dosya ismini hesapla
-		itoa((uchar)id, buffer, 10);
+		//itoa((uchar)id, buffer, 10);
 		char_cpy(file_name,"tdat");
-		concat(file_name,buffer);
+		concat(file_name,id);
 
 		i=0;
 		cprintf("\n\rVeri dosyasi aciliyor...");

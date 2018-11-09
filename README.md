@@ -47,9 +47,14 @@ makefile OSX El Capitan üzerinde cc65 v2.17 ile denenmiştir.
 
    
 ## Güncellemeler
-9.11.2014   
+*9.11.2014*   
 string.h kütüphanesi kaldırıldı.
 strcpy ve strcat fonksiyonları yerine char_cpy ve concat fonksiyonları yazıldı.
+
+stdlib.h kütüphanesi kaldırıldı.
+malloc ve itoa fonksiyonlarının kullandığı yerler yeniden düzenlendi.
+
+Bu aşamada programın boyutu 10KB'a indi.
 
 ## Referanslar
 [The Animal Episode]

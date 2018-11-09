@@ -30,7 +30,7 @@ void main(void)
 	{
 		// Ağaç yapısını hazırla
 		reset_screen();
-		read_tree(0);
+		read_tree("0");
 		//debug_test_input();
 		//debug_print_tree();
 
