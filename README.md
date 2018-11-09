@@ -14,7 +14,7 @@ Bilgisayar ve insanın olarak karşılıklı yazıştığı ilk program olarak J
 
 Hayvan tahmin programının en ünlü versiyonu John Walker'ın 1975'de UNIVAC için yazdığı *ANIMAL* olsa da ben en eski versiyon olarak Arthur Luehrmann'ın 1970'lerde yazdığı *JACKASS*'e ulaşabildim.
 
-##Nasıl Çalışıyor
+## Nasıl Çalışıyor
 
 Program hayvan bilgisini binary tree yapısı üzerinde tutuyor.
 
@@ -44,14 +44,14 @@ Doğru cevapta `left`, yanlış cevapta `right` node'a gidiliyor. Ağın sonuna 
                               Balığı 
 
 
-##Nasıl Denerim
+## Nasıl Denerim
 
 Derlenmiş programı disk.d64 imajını kullanarak açabilirsiniz. Programı sadece C64 üzerinde denedim ancak 128'de de çalışması gerekir.
 
 makefile OSX El Capitan üzerinde cc65 v2.17 ile denenmiştir. 
 
    
-##Güncellemeler
+## Güncellemeler
 *9.11.2014*   
 string.h kütüphanesi kaldırıldı.
 strcpy ve strcat fonksiyonları yerine char_cpy ve concat fonksiyonları yazıldı.
@@ -61,14 +61,11 @@ malloc ve itoa fonksiyonlarının kullandığı yerler yeniden düzenlendi.
 
 Bu aşamada programın boyutu 10KB'a indi.
 
-##Referanslar
-[The Animal Episode]
-(http://www.fourmilab.ch/documents/univac/animal.html)
+## Referanslar
+[The Animal Episode](http://www.fourmilab.ch/documents/univac/animal.html)
 
-[GUESS THE ANIMAL - A DECISION-TREE IN YOUR ATARI] 
-(https://www.atarimagazines.com/v4n12/Animal.html)
+[GUESS THE ANIMAL - A DECISION-TREE IN YOUR ATARI] (https://www.atarimagazines.com/v4n12/Animal.html)
 
-[AI Animals / perlMonks ]
-(https://www.perlmonks.org/?node_id=195991)  
+[AI Animals / perlMonks ](https://www.perlmonks.org/?node_id=195991)  
 
 
