@@ -1,8 +1,8 @@
 
 CC 	= cl65
 AS  = ca65
-CFLAGS  = -t $(CC65_TARGET) --create-dep -O
-LDFLAGS = -t $(CC65_TARGET) -m $(PROGRAM).map
+CFLAGS  = -Oirs -t $(CC65_TARGET) --create-dep 
+LDFLAGS = -Oirs -t $(CC65_TARGET) -m $(PROGRAM).map
 
 VICE = /Applications/Vice
 
