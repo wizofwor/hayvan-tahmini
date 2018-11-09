@@ -6,7 +6,7 @@
 - [Nasil Çalışıyor](#nasıl-çalışıyor)  
 - [Nasıl Denerim](#nasıl-denerim)  
 - [Güncellemeler](#güncellemeler)  
-- [Referanslar](#r****eferanslar)
+- [Referanslar](#referanslar)
 
 <!-- /TOC -->
 
